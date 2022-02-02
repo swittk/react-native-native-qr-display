@@ -1,6 +1,6 @@
 # react-native-native-qr-display
 
-Native JSI QR Code Display for React Native
+Native QR Code Display for React Native
 
 ## Installation
 

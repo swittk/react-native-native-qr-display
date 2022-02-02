@@ -1,7 +1,7 @@
 #ifndef EXAMPLE_H
 #define EXAMPLE_H
 
-namespace example {
+namespace SKRNNativeQRDisplay {
   int multiply(float a, float b);
 }
 

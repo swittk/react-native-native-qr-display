@@ -9,8 +9,9 @@
     "start": "react-native start"
   },
   "dependencies": {
-    "react": "16.13.1",
-    "react-native": "0.63.4"
+    "expo": "^44.0.6",
+    "react": "17",
+    "react-native": "0.64.3"
   },
   "devDependencies": {
     "@babel/core": "^7.12.10",
