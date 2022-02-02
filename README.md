@@ -2,6 +2,9 @@
 
 Native QR Code Display for React Native
 
+This is based on the CPP implementation of @nayuki's brilliant [QR-Code-Generator](https://github.com/nayuki/QR-Code-generator)
+
+
 ## Installation
 
 ```sh
@@ -10,12 +13,20 @@ npm install react-native-native-qr-display
 
 ## Usage
 
-```js
-import { multiply } from "react-native-native-qr-display";
+```tsx
+import { NativeQRDisplayECCLevel, NativeQRDisplayView } from 'react-native-native-qr-display';
 
+render() {
+    return <NativeQRDisplayView
+        style={{ backgroundColor: "orange", flex: 1 }}
+        // The string data
+        stringData="My example QR Text"
+        // The Error correction level. The maximum length of string depends on the error correction level (see typescript definitions for appropriate lengths)
+        ECC={NativeQRDisplayECCLevel.HIGH}
+    />
+}
 // ...
 
-const result = await multiply(3, 7);
 ```
 
 ## Contributing
