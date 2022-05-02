@@ -25,7 +25,7 @@ public class NativeQrDisplayModule extends ReactContextBaseJavaModule {
     static {
         try {
             // Used to load the 'native-lib' library on application startup.
-            System.loadLibrary("cpp");
+            System.loadLibrary("reactnativenativeqrdisplay");
         } catch (Exception ignored) {
         }
     }
