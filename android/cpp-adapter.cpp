@@ -40,7 +40,6 @@ jint JNI_OnLoad(JavaVM *vm, void *reserved) {
     paintClass = _paintClass;
     drawRectMethod = env->GetMethodID(_canvasClass, "drawRect", "(FFFFLandroid/graphics/Paint;)V");
     setPaintARGBMethod = env->GetMethodID(_paintClass, "setARGB", "(IIII)V");
-    env->GetMethodID(_paintClass, "setColor", "(J)V");
     return JNI_VERSION_1_6;
 }
 
