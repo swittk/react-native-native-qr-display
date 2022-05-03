@@ -102,7 +102,7 @@ public class SKRNNativeQRDisplayView extends ReactViewGroup {
       return;
     }
     int size = QRCodeCPPGetSize(qrCodePtr);
-    float pxSize = (float) width / (float) size;
+    float pxSize = (float) w / (float) size;
 
     whiteDrawPath.rewind();
     blackDrawPath.rewind();
